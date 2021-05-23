@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="outerbody">
+        <div id="display">
+            <input id="displayValue" type="text">
+        </div>
+        <div id="operators2">
+            <ul>
+                <li id="C"><button onclick="clearDisplay()">C</button></li>
+                <li id="del"><button onclick="del()">del</button></li>
+            </ul>
+        </div>
+        <div id= structure>
+            <div id="buttons">
+                <ul>
+                    <li id="1"><button value="1" onclick="putindisplay(value)">1</button></li>
+                    <li id="2"><button value="2" onclick="putindisplay(value)">2</button></li>
+                    <li id="3"><button value="3" onclick="putindisplay(value)">3</button></li>
+                    <li id="4"><button value="4" onclick="putindisplay(value)">4</button></li>
+                    <li id="5"><button value="5" onclick="putindisplay(value)">5</button></li>
+                    <li id="6"><button value="6" onclick="putindisplay(value)">6</button></li>
+                    <li id="7"><button value="7" onclick="putindisplay(value)">7</button></li>
+                    <li id="8"><button value="8" onclick="putindisplay(value)">8</button></li>
+                    <li id="9"><button value="9" onclick="putindisplay(value)">9</button></li>
+                    <li id="0"><button value="0" onclick="putindisplay(value)">0</button></li>
+                </ul>
+            </div>
+            <div id="operators">
+                <ul>
+                    <li id="+"><button value="+" onclick="putindisplay(value)">+</button></li>
+                    <li id="-"><button value="-" onclick="putindisplay(value)">-</button></li>
+                    <li id="*"><button value="*" onclick="putindisplay(value)">*</button></li>
+                    <li id="/"><button value="/" onclick="putindisplay(value)">/</button></li>
+                    <li id="equal"><button onclick="calculate()">=</button></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <script src="code.js"></script>
+</body>
+</html>
